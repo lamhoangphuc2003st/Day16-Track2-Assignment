@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-10-02T14:03:39.489617+00:00",
+  "host": "ai-gpu-node",
+  "cpu_count": 2,
+  "python": "3.11.2",
+  "lightgbm": "4.7.0",
+  "dataset_shape": [
+    284807,
+    31
+  ],
+  "split": {
+    "train": 170883,
+    "val": 56962,
+    "test": 56962,
+    "method": "stratified 60/20/20"
+  },
+  "seed": 42,
+  "params": {
+    "n_estimators": 1000,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_weight": 1,
+    "early_stopping_rounds": 50
+  },
+  "data_load_seconds": 2.9547,
+  "training_seconds": 7.3198,
+  "best_iteration": 128,
+  "auc_roc": 0.970937,
+  "accuracy": 0.999544,
+  "f1": 0.857143,
+  "precision": 0.928571,
+  "recall": 0.795918,
+  "threshold": 0.5,
+  "latency_1_row_ms": 1.3301,
+  "latency_1_row_ms_mean": 1.3538,
+  "latency_1_row_ms_p95": 1.5134,
+  "latency_runs": 200,
+  "throughput_1000_rows_seconds": 0.007081,
+  "throughput_1000_rows_per_second": 141213.6,
+  "throughput_runs": 20
+}
